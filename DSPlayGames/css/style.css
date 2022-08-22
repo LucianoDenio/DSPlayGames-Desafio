@@ -36,6 +36,12 @@ h1{
     padding-left: 10px;
 }
 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 
 .container{
@@ -48,6 +54,21 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.container-links{
+    display: flex;
+    align-items: center;
+}
+
+.menu-items{
+    display: flex;
+    list-style-type: none;
+}
+
+.container-links a{
+    padding-right: 29px;
+    font-size: 14px;
 }
 
 .news-title{
@@ -140,6 +161,7 @@ h1{
     width: 300px;
     height: 326px;
     border-radius: 8px;
+    box-shadow: 0 1px 4px var(--color-footer)
 }
 
 .card-img img{
@@ -147,6 +169,7 @@ h1{
     height: 168.54px;
     margin-bottom: 27.46px;
     border-radius: 8px 8px 0 0;
+
 }
 
 .card-img h4{
@@ -305,6 +328,17 @@ footer{
     text-align: center;
 }
 
+@media screen and (max-width : 576px) {
+    .menu-items{
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) {
+    h1{
+        font-size: 24px;
+    }
+}
 
 
 
