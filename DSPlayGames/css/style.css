@@ -141,6 +141,8 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 24px;
+    font-weight: bold;
     padding-top: 40px;
 }
 
@@ -153,6 +155,13 @@ nav{
     padding-bottom: 40px;
 }
 
+.container-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .card-img{
     background-color: var(--color-white);
     display: flex;
@@ -162,7 +171,7 @@ nav{
     width: 300px;
     height: 326px;
     border-radius: 8px;
-    box-shadow: 0 1px 4px var(--color-footer)
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.25)
 }
 
 .card-img img{
@@ -219,7 +228,9 @@ nav{
     height: 603px;
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
     border-radius: 8px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
 }
 
 .card-name{
@@ -230,13 +241,18 @@ nav{
     padding: 20px 0;
 }
 
+input::placeholder {
+    color: #C4C4C4;
+}
+
+
 .name-email-input{
     width: 280px;
     height: 50px;
     border-radius: 4px;
     padding-left: 22px;
     font-size: 16px;
-    color: #C4C4C4;
+    border: 1px solid var(--color-ligth-grey);
 }
 
 .quest-option{
@@ -252,9 +268,17 @@ nav{
    align-items: center;
 }
 
+input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 9px;
+}
+
 .input-console{
     margin-bottom: 35px;
 }
+
+
 
 .input-console input{
     width: 23px;
@@ -298,7 +322,7 @@ nav{
     width: 244px;
     height: 67px;
     margin-bottom: 20px;
-    border: 0;
+    border: 2px solid var(--color-ligth-pink);
     border-radius: 8px;
     background-color: var(--color-white);
     color: var(--color-ligth-pink);
@@ -328,6 +352,8 @@ footer{
     padding-top: 37px;
     text-align: center;
 }
+
+
 
 @media screen and (max-width : 576px) {
     .menu-items{
@@ -359,6 +385,43 @@ footer{
 
     .article-text{
         margin-bottom: 16px;
+    }
+
+    .title-section-games{
+        font-size: 36px;
+    }
+
+    .form{
+        width: 790px;
+        height: 522px;
+        margin-bottom: 61px;
+    }
+
+    .name-email-input{
+        width: 642px;
+    }
+
+    .title-form{
+        font-size: 36px;
+    }
+
+    .container-submit-reset{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    
+}
+
+@media screen and (min-width :930px) {
+    .container-cards{
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
 
